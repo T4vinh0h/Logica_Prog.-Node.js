@@ -7,3 +7,11 @@
 // Quantos números foram digitados
 // Use Number() para converter os valores digitados.
 
+const prompt = require("prompt-sync")();
+    let numeros = [];
+for (let i = 1; i <= 3; i++) {
+    let nmr = Number(prompt(`Digite o ${i}º numero: `));
+    numeros.push(nmr);
+}
+console.log(numeros);
+console.log(numeros.length);

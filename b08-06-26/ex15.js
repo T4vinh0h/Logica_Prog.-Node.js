@@ -6,3 +6,22 @@
 // "Estudar JavaScript"
 // "Fazer exercícios"
 // "Revisar arrays"
+const prompt = require("prompt-sync")();
+
+console.log(`\n========-------------------------------========`);
+console.log(`\n=====--------| Cadastrar Tarefas |--------=====`);
+let tarefas = [];
+for (let i = 0; i <= 2; i++) {
+        let tarefasAdd = (prompt(`Digite a ${i}º tarefa: `)); 
+        // Exemplo de tarefas:
+        // "Estudar JavaScript"
+        // "Fazer exercícios"
+        // "Revisar arrays"
+        tarefas.push(tarefasAdd);
+    }
+console.log(`\n========-------------------------------========`);
+console.log(`\n=====-------| Tarefas Registradas |-------=====`);
+    for (let i = 0; i <= 2; i++) {
+        console.log(`Tarefa ${i}: ${tarefas[i]}`);
+    }
+console.log(`\n========-------------------------------========`);

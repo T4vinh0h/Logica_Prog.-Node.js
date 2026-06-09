@@ -8,4 +8,9 @@
 // Daniela
 // Eduardo
 
+let nomes = [ "Ana", "Bruno", "Carlos", "Daniela", "Eduardo"];
+for (let i = 0; i <= 4; i++) {
+    console.log(nomes[i]);
+}
+console.log(nomes.length);
 

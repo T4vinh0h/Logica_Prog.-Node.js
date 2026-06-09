@@ -13,7 +13,7 @@
 const prompt = require("prompt-sync")();
     let nomes = [];
 for (let i = 1; i <= 3; i++) {
-    let nome = prompt(`Digite o nome ${i}: `);
+    let nome = prompt(`Digite o ${i}º nome: `);
     nomes.push(nome);
 }
 console.log(nomes);

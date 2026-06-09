@@ -14,5 +14,15 @@
 // Índice 1: nota 7
 // Índice 2: nota 9
 // Índice 3: nota 10
+const prompt = require("prompt-sync")();
 
-
+console.log(`\n------------------------`);
+let notas = [];
+    for (let i = 0; i <= 3; i++) {
+        let num = Number(prompt(`Digite a ${i}º nota: `));
+        notas.push(num);
+    }
+    for (let i = 0; i <= 3; i++) {
+        console.log(`Indice ${i}: ${notas[i]}`);
+    }
+    console.log(`\n------------------------`);
