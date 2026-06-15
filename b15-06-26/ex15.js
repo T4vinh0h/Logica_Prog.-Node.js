@@ -1,0 +1,10 @@
+// Exercício 15 — Array de Objetos
+//
+// Elabore um array denominado `produtos` contendo 3 objetos.
+//
+// Cada objeto deve representar um produto com as propriedades:
+//
+// - nome
+// - preco
+//
+// Implemente a exibição do nome de todos os produtos utilizando `console.log()`.
