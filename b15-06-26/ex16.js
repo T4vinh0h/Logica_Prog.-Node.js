@@ -8,3 +8,22 @@
 // - nota
 //
 // Implemente a utilização de um laço `for` para exibir o nome e a nota de cada aluno.
+
+const alunos = [
+    {
+        nome: "João",
+        nota: 8
+    },
+    {
+        nome: "Maria",
+        nota: 9
+    },
+    {
+        nome: "Pedro",
+        nota: 7
+    }
+];
+
+for (let i = 0; i < alunos.length; i++) {
+    console.log(`Aluno: ${alunos[i].nome} - Nota: ${alunos[i].nota}`);
+}

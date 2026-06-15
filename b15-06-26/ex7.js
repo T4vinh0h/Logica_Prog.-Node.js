@@ -12,3 +12,12 @@
 // ```text
 // O livro Dom Casmurro foi escrito por Machado de Assis e possui 256 páginas.
 // ```
+
+const livro = {
+    titulo: "Dom Casmurro",
+    autor: "Machado de Assis",
+    ano: 1899,
+    quantidadePaginas: 256
+};
+console.log(`O livro ${livro.titulo} foi escrito por ${livro.autor} e possui ${livro.quantidadePaginas} páginas.`);
+console.log(livro);

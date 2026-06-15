@@ -16,3 +16,14 @@
 // ```text
 // A escola Instituto Exemplo fica na Rua Central, número 500, bairro Centro.
 // ```
+
+const escola = {
+    nome: "Instituto Butantan",
+    endereco: {
+        rua: "Rua Central",
+        numero: 500,
+        bairro: "Centro"
+    }
+};
+
+console.log(`A escola ${escola.nome} fica na ${escola.endereco.rua}, número ${escola.endereco.numero}, bairro ${escola.endereco.bairro}.`);

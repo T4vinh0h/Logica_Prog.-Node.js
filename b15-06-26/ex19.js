@@ -18,3 +18,14 @@
 // memoria: 8GB
 // armazenamento: 256GB SSD
 // ```
+
+const computador = {
+    marca: "Dell",
+    processador: "Intel i5",
+    memoria: "8GB",
+    armazenamento: "256GB SSD"
+};
+
+for (let propriedade in computador) {
+    console.log(`${propriedade}: ${computador[propriedade]}`);
+}

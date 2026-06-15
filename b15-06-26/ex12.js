@@ -12,3 +12,13 @@
 // 3. Exiba o saldo final após as operações
 //
 // **Restrição:** Não utilize funções para esta implementação.
+
+const conta = {
+    titular: "Pedro Lobato",
+    saldo: 1000
+};
+
+conta.saldo += 500;
+conta.saldo -= 200;
+
+console.log(`O saldo final da conta de ${conta.titular} é de R$ ${conta.saldo}`);

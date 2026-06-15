@@ -14,3 +14,15 @@
 // ```
 //
 // Exiba o resultado da verificação no console.
+
+const livro = {
+   titulo: "Escola de Rock",
+   ano: 2023
+};
+console.log(livro);
+    livro.autor = "Richard Linklater";
+
+console.log(`/n============--------livro atualizado--------============`);
+console.log(`livro: ${livro.titulo}`);
+console.log(`ano: ${livro.ano}`);
+console.log(`autor: ${livro.autor}`);

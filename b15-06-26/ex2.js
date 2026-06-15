@@ -17,3 +17,12 @@
 // console.log(carro.marca);
 // console.log(carro["modelo"]);
 // ```
+
+const carro = {
+    marca: "Ford",
+    modelo: "Mustang GT",
+    motor: "motor Coyote 5.0L"
+};
+console.log(carro.marca);
+console.log(carro["modelo"]);
+console.log(carro.motor);

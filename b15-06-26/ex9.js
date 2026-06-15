@@ -24,3 +24,14 @@
 // ```text
 // Reprovado
 // ```
+
+const aluno = {
+    nome: "Otavio" , 
+    nota: 7
+}
+
+if (aluno.nota >= 7) {
+    console.log(`O aluno(a): ${aluno.nome}, foi Aprovado com: "${aluno.nota}" pontos de aproveitamento.`);
+} else {
+    console.log(`O aluno(a): ${aluno.nome}, foi Reprovado, sua nota foi: "${aluno.nota}"`);
+}

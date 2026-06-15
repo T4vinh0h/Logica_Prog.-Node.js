@@ -13,3 +13,13 @@
 // ```
 //
 // Exiba o nome do produto e o valor total em estoque.
+
+const produto = {
+    nome: "Notebook",
+    preco: 3500,
+    quantidade: 10
+};
+
+const total = produto.preco * produto.quantidade;
+
+console.log(`O produto ${produto.nome} tem um valor total de R$ ${total} em estoque.`);

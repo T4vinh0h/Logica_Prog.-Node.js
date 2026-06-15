@@ -9,11 +9,10 @@
 // Após a criação, realize a exibição de todas as informações no console.
 //
 // **Exemplo de estrutura:**
-//
-// ```javascript
-// const pessoa = {
-//     nome: "Ana",
-//     idade: 22,
-//     cidade: "Pelotas"
-// };
-// ```
+
+const pessoa = {
+    nome: "Otavio",
+    idade: 19,
+    cidade: "Pelotas"
+};
+console.log(pessoa);
