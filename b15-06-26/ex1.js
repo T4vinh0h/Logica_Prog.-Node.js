@@ -10,9 +10,10 @@
 //
 // **Exemplo de estrutura:**
 
-const pessoa = {
-    nome: "Otavio",
-    idade: 19,
+const pessoa = { 
+    nome: "Otávio",  
+    idade: 19, 
     cidade: "Pelotas"
-};
+} 
 console.log(pessoa);
+

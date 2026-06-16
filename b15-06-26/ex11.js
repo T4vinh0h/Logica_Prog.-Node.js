@@ -16,10 +16,9 @@
 
 const produto = {
     nome: "Notebook",
-    preco: 3500,
-    quantidade: 10
-};
-
-const total = produto.preco * produto.quantidade;
+    preco: 2000,
+    qtd: 10
+}
+const total = produto.preco * produto.qtd;
 
 console.log(`O produto ${produto.nome} tem um valor total de R$ ${total} em estoque.`);

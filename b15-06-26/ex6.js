@@ -26,3 +26,16 @@ console.log(`/n============--------livro atualizado--------============`);
 console.log(`livro: ${livro.titulo}`);
 console.log(`ano: ${livro.ano}`);
 console.log(`autor: ${livro.autor}`);
+
+
+const book = {
+    titulo: "logica de programação com algoritmos em JavaScript",
+    ano: 2022 
+};
+console.log(book);
+    book.autor = "Edécio"
+        console.log(`/n============--------livro atualizado--------============`);
+        console.log(`livro: ${livro.titulo}`);
+        console.log(`ano: ${livro.ano}`);
+        console.log(`autor: ${livro.autor}`);
+  

@@ -11,9 +11,15 @@
 
 const aluno = {
     nome: "Caue",
-    nota: 9.9    
+    nota: [9.9,8,7.5]    
 };
 console.log(aluno);
-aluno.curso = "Ciência da Computação";
-console.log(aluno.curso);
+aluno.curso = "Analise e Desenvolvimento de Sistemas";
+console.log(aluno);
+
+const aluno2 ={
+    nome: "Otávio",
+    nota: [8.2,6.0,9.9]
+}
+aluno2.curso = "Técnico em Desenvolvimento de Sistemas";
 console.log(aluno);

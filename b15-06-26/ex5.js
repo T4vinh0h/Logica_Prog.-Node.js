@@ -10,11 +10,11 @@
 //
 // Apresente o estado do objeto antes e após a remoção da propriedade.
 
-const funcionario = { 
-    nome: "Lobato",
-    cargo:"Full Stack Developer",
-    salario: 3000
-};
-console.log(`Antes da remoção: ${funcionario.nome}, ${funcionario.cargo}, ${funcionario.salario}`);
+const funcionario = {
+    nome:"Otávio",
+    cargo:"Dev",
+    salario: 1200
+}
+console.log(funcionario);
 delete funcionario.salario;
-console.log(`Depois da remoção - Nome:${funcionario.nome}, Cargo:${funcionario.cargo}, salario:${funcionario.salario}`);
+console.log(funcionario);

@@ -14,9 +14,9 @@
 // **Restrição:** Não utilize funções para esta implementação.
 
 const conta = {
-    titular: "Pedro Lobato",
-    saldo: 1000
-};
+   titular: "Pedro Lobato",
+   saldo: 1200.00
+}
 
 conta.saldo += 500;
 conta.saldo -= 200;

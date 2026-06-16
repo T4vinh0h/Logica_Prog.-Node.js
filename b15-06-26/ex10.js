@@ -17,13 +17,12 @@
 // Exiba uma mensagem informativa indicando se o motorista pode ou não dirigir.
 
 const motorista = {
-    nome:"Pedro Lobato", 
-    idade: 
-    29, 
+    nome: "Pedro Lobato",
+    idade: 28,
     possuiCarteira: true
-};
+}
 
-if ( motorista.idade >= 18 && motorista.possuiCarteira === true) {
+if (motorista.idade >= 18 && motorista.possuiCarteira === true){
     console.log(`O motorista ${motorista.nome} tem permissão para dirigir!`);
 } else {
     console.log(`O motorista ${motorista.nome} não tem permissão para dirigir!`);

@@ -19,5 +19,16 @@ const livro = {
     ano: 1899,
     quantidadePaginas: 256
 };
+console.log(`/n============--------livro atualizado--------============`);
 console.log(`O livro ${livro.titulo} foi escrito por ${livro.autor} e possui ${livro.quantidadePaginas} páginas.`);
 console.log(livro);
+
+const bookDev = {
+    titulo: "logica de programação com algoritmos em JavaScript",
+    autor: "Edécio",
+    ano: 2022,
+    qtdpag:  267
+};
+console.log(`/n============--------livro atualizado--------============`);
+console.log(`O livro ${bookDev.titulo} foi escrito por ${bookDev.autor} e possui ${bookDev.qtdpag} páginas.`);
+console.log(bookDev);

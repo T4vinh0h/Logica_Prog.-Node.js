@@ -25,3 +25,14 @@ console.log(`Nome do aluno: ${aluno.nome}`);
 console.log(`Nota 1: ${aluno.nota1}`);
 console.log(`Nota 2: ${aluno.nota2}`);
 console.log(`Média calculada: ${media}`);
+
+const aluno2 = {
+    nome:"Otávio",
+    nota1: 6,
+    nota2: 10
+}
+const media2 = (aluno2.nota1 + aluno2.nota2) / 2;
+console.log(`Nome do aluno: ${aluno2.nome}`);
+console.log(`Nota 1: ${aluno2.nota1}`);
+console.log(`Nota 2: ${aluno2.nota2}`);
+console.log(`Média calculada: ${media2}`);

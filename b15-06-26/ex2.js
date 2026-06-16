@@ -19,10 +19,10 @@
 // ```
 
 const carro = {
-    marca: "Ford",
-    modelo: "Mustang GT",
-    motor: "motor Coyote 5.0L"
-};
+    marca:"Renault", 
+    modelo:"Kwid", 
+    ano:2012
+}
 console.log(carro.marca);
-console.log(carro["modelo"]);
-console.log(carro.motor);
+console.log(carro.modelo);
+console.log(carro.ano);

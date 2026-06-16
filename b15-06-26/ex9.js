@@ -26,9 +26,9 @@
 // ```
 
 const aluno = {
-    nome: "Otavio" , 
-    nota: 7
-}
+    nome: "Otávio",
+    nota: 9.9
+};
 
 if (aluno.nota >= 7) {
     console.log(`O aluno(a): ${aluno.nome}, foi Aprovado com: "${aluno.nota}" pontos de aproveitamento.`);

@@ -12,6 +12,6 @@ const produto = {
     nome: "Notebook",
     preco: 5000
 };
-console.log(`Preço anterior do produto: ${produto.preco}`);
-produto.preco = 6000;
+console.log(`Preço anterior do produto: ${produto.preco} `);
+produto.preco = 1249,57
 console.log(`Preço atual do produto: ${produto.preco}`);
