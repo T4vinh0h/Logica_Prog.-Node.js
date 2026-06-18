@@ -13,4 +13,13 @@
 //     nome: "Ana",
 //     nota: 8
 // };
+let aluno = {
+    nome: "Ana",
+    nota: 8
+}
+    function mostrarAluno(aluno) {
+        console.log(`${aluno.nome}:${aluno.nota}`);
+    }
+    mostrarAluno(aluno)
+
 

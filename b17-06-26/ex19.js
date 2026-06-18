@@ -12,3 +12,17 @@
 // console.log(calcularMediaNotas(notas));
 // Resultado esperado:
 // 8
+
+function calcularMediaNotas(notas) {
+    let soma = 0;
+    for (let i = 0; i < notas.length ; i++) {
+       soma = soma + notas[i]   
+    }
+    let media = soma / notas.length;
+    return(media);
+}
+
+let notas = [8, 7, 9, 4 , 2, 5, 10];
+let resultadoDaFuncao = calcularMediaNotas(notas); 
+    console.log(`A média das "${notas.length}" notas (${notas}) é:  ${resultadoDaFuncao}`);
+

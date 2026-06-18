@@ -13,5 +13,15 @@
 //     { nome: "Carla", nota: 9 }
 // ];
 // listarAlunos(alunos);
+let alunos = [
+    { nome: "Ana", nota: 8 },
+    { nome: "Bruno", nota: 6 },
+    { nome: "Carla", nota: 9 }
+];
+function listarAlunos(alunos) {
+    for (let i = 0; i < alunos.length; i++) {
+        console.log(` O aluno(a) ${alunos[i].nome}, possui ${alunos[i].nota} pontos de aproveitamento!`);
+    }
+}
 
-
+listarAlunos(alunos);

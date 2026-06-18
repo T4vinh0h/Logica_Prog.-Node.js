@@ -9,3 +9,9 @@
 // ...
 // 5 x 10 = 50
 
+function mostrarTabuada(num) {
+    for (let i = 1; i <= 10 ; i++) {
+        let resultado = num * i;
+            console.log(`${num} X ${i} = ${resultado}`);
+    }
+}

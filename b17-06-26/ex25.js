@@ -7,3 +7,7 @@
 // Resultado esperado:
 // 20
 
+const multiplicar = function(n1, n2) { 
+    return n1 * n2
+}
+console.log(` O resultado: ${multiplicar(4, 5)}`);

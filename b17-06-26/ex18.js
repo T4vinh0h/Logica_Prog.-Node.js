@@ -6,3 +6,11 @@
 // let alunos = ["Ana", "Bruno", "Carla"];
 // mostrarNomes(alunos);
 
+function mostrarNomes(nomes) {
+    for (let i = 0; i < 4; i++) {  
+        nomes = alunos;
+            console.log(`Está presente: ${nomes[i]}`);
+  }
+}
+alunos = ["João Francisco", "Bruno Lenke", "Miguel", "Lucas Moreira"];
+mostrarNomes(alunos);

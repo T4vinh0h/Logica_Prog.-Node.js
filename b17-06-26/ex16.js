@@ -13,8 +13,10 @@
 // 0
 
 function contagemRegressiva(numero) {
-    for (let i = 1; i <= numero ; i--) {
-       console.log( `${i}`);
-    }
+    let i = numero;
+        while (i >= 0) {
+            console.log(`${i}`);
+            i--
+        }
 }
 contagemRegressiva(10);
