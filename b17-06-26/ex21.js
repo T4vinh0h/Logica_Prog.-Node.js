@@ -8,22 +8,16 @@
 // Ana está aprovada.
 // Caso contrário, exiba:
 // Ana está reprovada.
-let aluno1 = {
+let aluno = {
     nome:"Caue",
     nota: 10
 }
-let aluno2 = {
-    nome:"Lobato",
-    nota: 7
-}
-let aluno3 = {
-    nome:"Otavio",
-    nota: 3
-}
-    function verificarAluno(aluno) {
-        if (aluno.nota >= 7) {
-            console.log(`O aluno ${aluno.nome} tem ${aluno.nota} de aproveitamento!`);
-        } else {
-            console.log(`${aluno.nome} está Reprovado!`); 
-        }
+function verificarAluno(aluno) {
+    if (aluno.nota >= 7) {
+        console.log(`O aluno ${aluno.nome} tem ${aluno.nota} de aproveitamento!`);
+    } else {
+        console.log(`${aluno.nome} está Reprovado!`); 
     }
+}
+
+verificarAluno(aluno);
