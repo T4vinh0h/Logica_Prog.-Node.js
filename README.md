@@ -1,5 +1,59 @@
-# Lógica Prog. - Node.js
+# Aprendizado de Programação - UniSenac
 
+## Pré-requisitos
+
+- Node.js instalado
+- npm (Node Package Manager)
+
+## Instalação
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/T4vinh0h/Logica_Prog.-Node.js.git
+   ```
+
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd Logica_Prog.-Node.js
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+## Como Executar
+
+Para executar qualquer exercício, use o Node.js:
+
+```bash
+node caminho/para/o/arquivo.js
+```
+
+Por exemplo:
+```bash
+node SENAC/Logica\ Prog/exemplo.js
+```
+
+## Estrutura do Projeto
+
+```
+Logica_Prog.-Node.js/
+├── SENAC/
+│   ├── Logica Prog/      # Exercícios de lógica de programação
+│   ├── MySQL/            # Exercícios relacionados a MySQL
+│   ├── P.O.O/            # Programação Orientada a Objetos
+│   └── UGC_23-06-26/     # Material específico
+├── node_modules/         # Dependências instaladas
+├── package.json          # Configuração do projeto
+├── package-lock.json     # Lock das dependências
+├── LICENSE               # Licença do projeto
+└── README.md             # Documentação
+```
+
+## Dependências
+
+- **prompt-sync**: Biblioteca para leitura de entrada de dados via console de forma síncrona.
 
 
 ## Conceitos Identificados e Frequência
@@ -190,61 +244,6 @@ Esta pasta está reservada para exercícios de Programação Orientada a Objetos
 - **Módulos**: organização de código em arquivos separados
 
 ---
-
-## Pré-requisitos
-
-- Node.js instalado
-- npm (Node Package Manager)
-
-## Instalação
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/T4vinh0h/Logica_Prog.-Node.js.git
-   ```
-
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd Logica_Prog.-Node.js
-   ```
-
-3. Instale as dependências:
-   ```bash
-   npm install
-   ```
-
-## Como Executar
-
-Para executar qualquer exercício, use o Node.js:
-
-```bash
-node caminho/para/o/arquivo.js
-```
-
-Por exemplo:
-```bash
-node SENAC/Logica\ Prog/exemplo.js
-```
-
-## Estrutura do Projeto
-
-```
-Logica_Prog.-Node.js/
-├── SENAC/
-│   ├── Logica Prog/      # Exercícios de lógica de programação
-│   ├── MySQL/            # Exercícios relacionados a MySQL
-│   ├── P.O.O/            # Programação Orientada a Objetos
-│   └── UGC_23-06-26/     # Material específico
-├── node_modules/         # Dependências instaladas
-├── package.json          # Configuração do projeto
-├── package-lock.json     # Lock das dependências
-├── LICENSE               # Licença do projeto
-└── README.md             # Documentação
-```
-
-## Dependências
-
-- **prompt-sync**: Biblioteca para leitura de entrada de dados via console de forma síncrona.
 
 ## Licença
 
