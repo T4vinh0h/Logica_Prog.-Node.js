@@ -1,4 +1,4 @@
-# Aprendizado de Programação - UniSenac
+# Aprendizado de Programação - Baseado no curso Técnico de Desenvolvimento de Sistemas 
 
 ## Pré-requisitos
 
