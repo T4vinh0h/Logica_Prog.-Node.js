@@ -2,19 +2,21 @@
 
 ## Pré-requisitos
 
-- Node.js instalado
-- npm (Node Package Manager)
+- **Node.js** (versão 14 ou superior) instalado
+- **npm** (Node Package Manager) - geralmente instalado junto com Node.js
+- **Git** para clonar o repositório
+- Editor de código (VS Code, Sublime Text, ou outro de preferência)
 
 ## Instalação
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/T4vinh0h/Logica_Prog.-Node.js.git
+   git clone https://github.com/T4vinh0h/Aprendizado_Dev.git
    ```
 
 2. Navegue até o diretório do projeto:
    ```bash
-   cd Logica_Prog.-Node.js
+   cd Aprendizado_Dev
    ```
 
 3. Instale as dependências:
@@ -22,18 +24,33 @@
    npm install
    ```
 
-## Como Executar
+4. Verifique a instalação:
+   ```bash
+   node --version
+   npm --version
+   ```
 
-Para executar qualquer exercício, use o Node.js:
+## Executáveis
+
+Para executar qualquer exercício JavaScript, use o Node.js:
 
 ```bash
 node caminho/para/o/arquivo.js
 ```
 
-Por exemplo:
+Exemplos:
 ```bash
 node SENAC/Logica\ Prog/exemplo.js
+node SENAC/P.O.O/classe_exemplo.js
 ```
+
+Para executar scripts MySQL, utilize um cliente MySQL como:
+- **MySQL Workbench** (interface gráfica)
+- **mysql** command-line client:
+  ```bash
+  mysql -u usuario -p nome_banco < arquivo.sql
+  ```
+- **DBeaver** (interface gráfica multi-banco)
 
 ## Estrutura do Projeto
 
@@ -59,34 +76,33 @@ Logica_Prog.-Node.js/
 ## Conceitos Identificados e Frequência
 
 **Conceitos Básicos (presentes em 40+ arquivos):**
-- **Variáveis e constantes (let, const, var)** - 340 arquivos
-- **Operadores aritméticos (+, -, *, /)** - 365 arquivos
-- **console.log** - 338 arquivos
-- **Template strings (`${}`)** - 157 arquivos
-- **Comentários** - 340 arquivos
-- **Entrada de dados com prompt-sync** - 176 arquivos
-- **Conversão de tipos (Number(), parseFloat(), parseInt())** - 99 arquivos
+- **Variáveis e constantes (`let`, `const`, `var`)**: armazenam valores de entrada, resultados de cálculos, contadores e estados. **- 340 arquivos**
+- **Operadores aritméticos (+, -, *, /)**: usados em somas, subtrações, multiplicações, divisões, médias e conversões. **- 365 arquivos**
+- **console.log**: exibe resultados, mensagens e orientações ao usuário. **- 338 arquivos**
+- **Template strings (`${}`)**: formatam saídas dinâmicas com variáveis dentro de texto. **- 157 arquivos**
+- **Comentários**: explicam a lógica por etapas e organizam exercícios. **- 340 arquivos**
+- **Entrada de dados com prompt-sync**: lê valores do usuário em exercícios interativos. **- 176 arquivos**
+- **Conversão de tipos (Number(), parseFloat(), parseInt())**: transforma texto em número para operações matemáticas. **- 99 arquivos**
 
 **Conceitos Intermediários (presentes em 20-40 arquivos):**
-- **Condicionais (if, else, else if)** - 150 arquivos
-- **Operadores de comparação (>, <, >=, <=, ==, ===, !=)** - 229 arquivos
-- **Operadores lógicos (&&, ||, !)** - 115 arquivos
-- **Valores booleanos (true, false)** - 33 arquivos
-- **Strings e manipulação básica** - 35 arquivos
-- **Validações de entrada** - 98 arquivos
-
+- **Condicionais (if, else, else if)**: tomam decisões como aprovação/reprovação e validações de opções. **- 150 arquivos**
+- **Operadores de comparação (>, <, >=, <=, ==, ===, !=)**: verificam intervalos, igualdade e combinações de condições. **- 229 arquivos**
+- **Operadores lógicos (&&, ||, !)**: combinam múltiplas condições em expressões complexas. **- 115 arquivos**
+- **Valores booleanos (true, false)**: controlam fluxos de validação e flags de estado. **- 33 arquivos**
+- **Strings e manipulação básica**: tratam nomes, respostas, buscas e formatação de texto. **- 35 arquivos**
+- **Validações de entrada**: checam números válidos, faixas esperadas e respostas corretas. **- 98 arquivos**t
 **Conceitos Avançados (presentes em 5-15 arquivos):**
-- **Loops (while, for)** - 125 arquivos
-- **Switch case** - 17 arquivos
-- **Arrays** - 99 arquivos
-- **Métodos de arrays (push)** - 24 arquivos
-- **Funções declaradas** - 75 arquivos
-- **Estruturas aninhadas** - 88 arquivos
-- **Break e continue** - 26 arquivos
-- **Cálculos matemáticos complexos** - 38 arquivos
-- **toFixed() para formatação** - 21 arquivos
-- **toLowerCase(), toUpperCase(), trim()** - 8 arquivos
-- **typeof** - 5 arquivos
+- **Loops (while, for)**: repetem cálculos, percorrem listas e repetem tarefas até condição ser satisfeita. **- 125 arquivos**
+- **Switch case**: escolhem ações com base em opções digitadas pelo usuário. **- 17 arquivos**
+- **Arrays**: armazenam coleções como notas, itens e listas de valores. **- 99 arquivos**
+- **Métodos de arrays (push)**: adicionam elementos em listas dinâmicas. **- 24 arquivos**
+- **Funções declaradas**: encapsulam cálculos e lógica reutilizável. **- 75 arquivos**
+- **Estruturas aninhadas**: combinam loops e condicionais para resolver problemas mais complexos. **- 88 arquivos**
+- **Break e continue**: controlam o fluxo dentro de repetições. **- 26 arquivos**
+- **Cálculos matemáticos complexos**: incluem raízes, arredondamentos e potências. **- 38 arquivos**
+- **toFixed() para formatação**: formata números com casas decimais. **- 21 arquivos**
+- **toLowerCase(), toUpperCase(), trim()**: normalizam entrada de texto. **- 8 arquivos**
+- **typeof**: verifica tipos de dados em validações. **- 5 arquivos**
 
 ## Conceitos e Exemplos de Uso
 
@@ -129,46 +145,46 @@ Situações comuns encontradas nos exercícios:
 ## MySQL - Conceitos Identificados e Frequência
 
 **Conceitos Básicos (presentes em 8+ arquivos):**
-- **CREATE DATABASE** - 8 arquivos
-- **CREATE TABLE** - 8 arquivos
-- **Tipos de dados (INT, VARCHAR, DECIMAL, DATE, DATETIME, YEAR, ENUM, BOOLEAN, TEXT)** - 8 arquivos
-- **PRIMARY KEY (PK)** - 8 arquivos
-- **FOREIGN KEY (FK)** - 8 arquivos
-- **AUTO_INCREMENT** - 8 arquivos
-- **NOT NULL** - 8 arquivos
-- **UNIQUE** - 6 arquivos
-- **DEFAULT** - 6 arquivos
+- **CREATE DATABASE**: cria novos bancos de dados para organizar sistemas completos. **- 8 arquivos**
+- **CREATE TABLE**: define estrutura de tabelas com campos, tipos e restrições. **- 8 arquivos**
+- **Tipos de dados (INT, VARCHAR, DECIMAL, DATE, DATETIME, YEAR, ENUM, BOOLEAN, TEXT)**: define o tipo de informação que cada coluna armazena. **- 8 arquivos**
+- **PRIMARY KEY (PK)**: identifica unicamente cada registro da tabela, geralmente com AUTO_INCREMENT. **- 8 arquivos**
+- **FOREIGN KEY (FK)**: cria relacionamentos entre tabelas, garantindo integridade referencial. **- 8 arquivos**
+- **AUTO_INCREMENT**: gera valores automáticos incrementais para chaves primárias. **- 8 arquivos**
+- **NOT NULL**: torna campos obrigatórios, impedindo valores vazios. **- 8 arquivos**
+- **UNIQUE**: garante que valores em uma coluna não se repitam. **- 6 arquivos**
+- **DEFAULT**: define um valor padrão quando nenhum valor é informado. **- 6 arquivos**
 
 **Conceitos Intermediários (presentes em 4-7 arquivos):**
-- **INSERT** - 7 arquivos
-- **UPDATE** - 7 arquivos
-- **DELETE** - 7 arquivos
-- **SELECT** - 7 arquivos
-- **WHERE** - 7 arquivos
-- **ORDER BY** - 7 arquivos
-- **LIMIT** - 6 arquivos
-- **DISTINCT** - 5 arquivos
-- **INNER JOIN** - 5 arquivos
-- **LEFT JOIN** - 5 arquivos
-- **ALTER TABLE** - 6 arquivos
-- **DROP TABLE** - 6 arquivos
-- **TRUNCATE TABLE** - 5 arquivos
-- **ON DELETE CASCADE** - 4 arquivos
-- **ON DELETE SET NULL** - 4 arquivos
-- **ON UPDATE CASCADE** - 4 arquivos
+- **INSERT**: adiciona novos registros nas tabelas, um ou múltiplos de uma vez. **- 7 arquivos**
+- **UPDATE**: modifica registros existentes com base em condições. **- 7 arquivos**
+- **DELETE**: remove registros de tabelas conforme filtros especificados. **- 7 arquivos**
+- **SELECT**: consulta e recupera dados das tabelas. **- 7 arquivos**
+- **WHERE**: filtra resultados baseado em condições específicas. **- 7 arquivos**
+- **ORDER BY**: ordena resultados por colunas em ordem crescente (ASC) ou decrescente (DESC). **- 7 arquivos**
+- **LIMIT**: limita a quantidade de registros retornados em uma consulta. **- 6 arquivos**
+- **DISTINCT**: remove valores duplicados dos resultados. **- 5 arquivos**
+- **INNER JOIN**: combina registros de tabelas relacionadas onde há correspondência. **- 5 arquivos**
+- **LEFT JOIN**: retorna todos os registros da tabela esquerda e correspondências da direita. **- 5 arquivos**
+- **ALTER TABLE**: modifica estrutura de tabelas (adicionar/remover colunas, alterar tipos). **- 6 arquivos**
+- **DROP TABLE**: exclui tabelas inteiras do banco de dados. **- 6 arquivos**
+- **TRUNCATE TABLE**: remove todos os registros mantendo a estrutura, resetando auto_increment. **- 5 arquivos**
+- **ON DELETE CASCADE**: exclui registros relacionados automaticamente quando o registro pai é deletado. **- 4 arquivos**
+- **ON DELETE SET NULL**: define como NULL as chaves estrangeiras quando o registro pai é deletado. **- 4 arquivos**
+- **ON UPDATE CASCADE**: atualiza automaticamente chaves estrangeiras quando a chave primária é alterada. **- 4 arquivos**
 
 **Conceitos Avançados (presentes em 1-3 arquivos):**
-- **GROUP BY** - 3 arquivos
-- **Funções de agregação (COUNT, SUM, AVG, MAX, MIN)** - 3 arquivos
-- **BETWEEN** - 5 arquivos
-- **IN** - 5 arquivos
-- **LIKE** - 3 arquivos
-- **CHECK** - 2 arquivos
-- **INDEX** - 2 arquivos
-- **Relacionamentos 1:N e N:N** - 8 arquivos
-- **Normalização (1FN, 2FN, 3FN)** - 2 arquivos
-- **Dependências funcionais** - 2 arquivos
-- **Modelo conceitual, lógico e físico** - 3 arquivos
+- **GROUP BY**: agrupa resultados por uma ou mais colunas para análise. **- 3 arquivos**
+- **Funções de agregação (COUNT, SUM, AVG, MAX, MIN)**: COUNT conta registros, SUM soma valores, AVG calcula média, MAX retorna maior valor, MIN retorna menor valor. **- 3 arquivos**
+- **BETWEEN**: filtra valores dentro de um intervalo específico. **- 5 arquivos**
+- **IN**: filtra valores que correspondem a uma lista de opções. **- 5 arquivos**
+- **LIKE**: busca padrões de texto usando curingas (%). **- 3 arquivos**
+- **CHECK**: valida se valores atendem a uma condição específica. **- 2 arquivos**
+- **INDEX**: cria índices para acelerar consultas em colunas frequentemente pesquisadas. **- 2 arquivos**
+- **Relacionamentos 1:N e N:N**: um registro de uma tabela se relaciona com muitos de outra (1:N) ou muitos com muitos (N:N). **- 8 arquivos**
+- **Normalização (1FN, 2FN, 3FN)**: elimina redundâncias e dependências anômalas. **- 2 arquivos**
+- **Dependências funcionais**: relação onde um atributo depende de outro para determinar seu valor. **- 2 arquivos**
+- **Modelo conceitual, lógico e físico**: representação abstrata, organização em tabelas e implementação real em SGBD. **- 3 arquivos**
 
 ## MySQL - Conceitos e Exemplos de Uso
 
@@ -229,24 +245,37 @@ Situações comuns encontradas nos exercícios de MySQL:
 
 ## P.O.O. - Programação Orientada a Objetos
 
-**Conceitos Identificados:**
+**Conceitos Identificados e Resumo:**
 
-Esta pasta está reservada para exercícios de Programação Orientada a Objetos em JavaScript/Node.js.
+**UML e Modelagem:**
+- **POO (Programação Orientada a Objetos)**: paradigma que organiza código em objetos com dados (atributos) e comportamentos (métodos), focando em reutilização, encapsulamento e modularidade. **- 1 arquivo**
+- **Classe vs Objeto**: classe é o modelo/template, objeto é instância concreta. Exemplo: classe "Carro" define estrutura, objeto é "Fusca Vermelho, 1975". **- 1 arquivo**
+- **UML (Unified Modeling Language)**: linguagem de modelagem visual para especificar, visualizar e documentar sistemas de software. Não é linguagem de programação executável. **- 1 arquivo**
+- **Objetivos da UML**: especificar estrutura/comportamento, visualizar arquitetura, documentar decisões de design, facilitar comunicação entre equipe e stakeholders. **- 1 arquivo**
+- **Requisitos funcionais vs não funcionais**: funcionais descrevem o que o sistema faz (ex: login), não funcionais descrevem como o sistema deve ser (ex: tempo de resposta < 2s). **- 1 arquivo**
+- **Ator em Diagrama de Casos de Uso**: entidade externa que interage com o sistema (pessoa, sistema externo ou hardware). Não precisa ser pessoa. **- 1 arquivo**
+- **Relacionamento - Associação**: relacionamento geral entre ator e caso de uso ou entre casos de uso. **- 1 arquivo**
+- **Relacionamento - Inclusão («include»)**: caso de uso base obrigatoriamente inclui outro caso de uso (comportamento obrigatório e reaproveitado). **- 1 arquivo**
+- **Relacionamento - Extensão («extend»)**: caso de uso estende outro de forma opcional sob condição (comportamento opcional condicional). **- 1 arquivo**
+- **Relacionamento - Herança (Generalização)**: caso de uso filho herda comportamento do caso de uso pai. **- 1 arquivo**
+- **Nome de caso de uso**: estrutura Verbo + Objeto (ação + entidade). Exemplos: Consultar Livro, Reservar Sala, Emitir Nota Fiscal. **- 1 arquivo**
 
-**Conceitos que serão abordados (planejamento):**
-- **Classes e Objetos**: estruturas para modelar entidades do mundo real
-- **Atributos e Métodos**: características e comportamentos dos objetos
-- **Encapsulamento**: proteção de dados internos dos objetos
-- **Herança**: reutilização de código entre classes relacionadas
-- **Polimorfismo**: comportamentos diferentes para métodos com mesmo nome
-- **Construtores**: inicialização de objetos
-- **Getters e Setters**: acesso controlado a atributos
-- **Módulos**: organização de código em arquivos separados
+**Situações comuns:** modelagem de sistemas (biblioteca, pizzaria, estacionamento, clínica, streaming), identificação de relacionamentos entre casos de uso, diferenciação entre requisitos funcionais e não funcionais, uso de atores externos (sistemas, hardware).
 
 ---
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
+Este projeto está licenciado sob a **Licença MIT**.
+
+### Detalhes da Licença MIT
+
+**Permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para lidar com o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e para permitir pessoas a quem o Software é fornecido para fazê-lo, sujeito às seguintes condições:**
+
+- O aviso de copyright acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+
+**O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUMA CASO OS AUTORES OU TITULARES DE DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER REIVINDICAÇÃO, DANOS OU OUTRAS RESPONSIBILIDADES, SEJA EM UMA AÇÃO DE CONTRATO, ATO ILÍCITO OU DE OUTRA FORMA, DECORRENTE DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.**
+
+Para mais informações, consulte o arquivo [LICENSE](LICENSE) neste repositório.
 
 ---
