@@ -24,10 +24,16 @@
    npm install
    ```
 
-4. Verifique a instalação:
+4. (Opcional) Para executar arquivos TypeScript da pasta P.O.O, instale ts-node:
+   ```bash
+   npm install -g ts-node typescript
+   ```
+
+5. Verifique a instalação:
    ```bash
    node --version
    npm --version
+   ts-node --version  # se instalou o ts-node
    ```
 
 ## Executáveis
@@ -42,6 +48,23 @@ Exemplos:
 ```bash
 node SENAC/Logica\ Prog/exemplo.js
 node SENAC/P.O.O/classe_exemplo.js
+```
+
+Para executar arquivos TypeScript (pasta P.O.O), use o ts-node:
+
+```bash
+# Instalar ts-node globalmente (se não tiver)
+npm install -g ts-node
+
+# Executar arquivo TypeScript
+ts-node caminho/para/arquivo.ts
+```
+
+Exemplos:
+```bash
+ts-node SENAC/P.O.O/b05-08-26/Otavio_Lista01_JS.ts
+ts-node SENAC/P.O.O/b06-08-26/Otavio_Lista2.ts
+ts-node SENAC/P.O.O/31-07-26/UML-D.C.ts
 ```
 
 Para executar scripts MySQL, utilize um cliente MySQL como:
@@ -60,6 +83,11 @@ Logica_Prog.-Node.js/
 │   ├── Logica Prog/      # Exercícios de lógica de programação
 │   ├── MySQL/            # Exercícios relacionados a MySQL
 │   ├── P.O.O/            # Programação Orientada a Objetos
+│   │   ├── 27-07-26/     # Atividade teórica sobre POO e UML
+│   │   ├── 31-07-26/     # Diagrama de Classes e implementação
+│   │   ├── b04-08-26/    # Exemplo básico de classe
+│   │   ├── b05-08-26/    # Lista de exercícios 01
+│   │   └── b06-08-26/    # Lista de exercícios 02
 │   └── UGC_23-06-26/     # Material específico
 ├── node_modules/         # Dependências instaladas
 ├── package.json          # Configuração do projeto
@@ -71,9 +99,14 @@ Logica_Prog.-Node.js/
 ## Dependências
 
 - **prompt-sync**: Biblioteca para leitura de entrada de dados via console de forma síncrona.
+- **typescript**: Linguagem TypeScript para tipagem estática (usado na pasta P.O.O).
+- **ts-node**: Execução direta de arquivos TypeScript sem compilação prévia.
 
+---
 
-## Conceitos Identificados e Frequência
+## Lógica de Programação
+
+### Conceitos Identificados e Frequência
 
 **Conceitos Básicos (presentes em 40+ arquivos):**
 - **Variáveis e constantes (`let`, `const`, `var`)**: armazenam valores de entrada, resultados de cálculos, contadores e estados. **- 340 arquivos**
@@ -90,7 +123,8 @@ Logica_Prog.-Node.js/
 - **Operadores lógicos (&&, ||, !)**: combinam múltiplas condições em expressões complexas. **- 115 arquivos**
 - **Valores booleanos (true, false)**: controlam fluxos de validação e flags de estado. **- 33 arquivos**
 - **Strings e manipulação básica**: tratam nomes, respostas, buscas e formatação de texto. **- 35 arquivos**
-- **Validações de entrada**: checam números válidos, faixas esperadas e respostas corretas. **- 98 arquivos**t
+- **Validações de entrada**: checam números válidos, faixas esperadas e respostas corretas. **- 98 arquivos**
+
 **Conceitos Avançados (presentes em 5-15 arquivos):**
 - **Loops (while, for)**: repetem cálculos, percorrem listas e repetem tarefas até condição ser satisfeita. **- 125 arquivos**
 - **Switch case**: escolhem ações com base em opções digitadas pelo usuário. **- 17 arquivos**
@@ -104,7 +138,7 @@ Logica_Prog.-Node.js/
 - **toLowerCase(), toUpperCase(), trim()**: normalizam entrada de texto. **- 8 arquivos**
 - **typeof**: verifica tipos de dados em validações. **- 5 arquivos**
 
-## Conceitos e Exemplos de Uso
+### Conceitos e Exemplos de Uso
 
 Os arquivos deste repositório exploram conceitos de lógica de programação aplicados em situações práticas, como cálculos, validações e manipulação de dados.
 
@@ -142,7 +176,9 @@ Situações comuns encontradas nos exercícios:
 
 ---
 
-## MySQL - Conceitos Identificados e Frequência
+## MySQL
+
+### Conceitos Identificados e Frequência
 
 **Conceitos Básicos (presentes em 8+ arquivos):**
 - **CREATE DATABASE**: cria novos bancos de dados para organizar sistemas completos. **- 8 arquivos**
@@ -159,8 +195,8 @@ Situações comuns encontradas nos exercícios:
 - **INSERT**: adiciona novos registros nas tabelas, um ou múltiplos de uma vez. **- 7 arquivos**
 - **UPDATE**: modifica registros existentes com base em condições. **- 7 arquivos**
 - **DELETE**: remove registros de tabelas conforme filtros especificados. **- 7 arquivos**
-- **SELECT**: consulta e recupera dados das tabelas. **- 7 arquivos**
-- **WHERE**: filtra resultados baseado em condições específicas. **- 7 arquivos**
+- **SELECT**: consulta e recupera dados das tabelas. **- 8 arquivos**
+- **WHERE**: filtra resultados baseado em condições específicas. **- 8 arquivos**
 - **ORDER BY**: ordena resultados por colunas em ordem crescente (ASC) ou decrescente (DESC). **- 7 arquivos**
 - **LIMIT**: limita a quantidade de registros retornados em uma consulta. **- 6 arquivos**
 - **DISTINCT**: remove valores duplicados dos resultados. **- 5 arquivos**
@@ -186,7 +222,7 @@ Situações comuns encontradas nos exercícios:
 - **Dependências funcionais**: relação onde um atributo depende de outro para determinar seu valor. **- 2 arquivos**
 - **Modelo conceitual, lógico e físico**: representação abstrata, organização em tabelas e implementação real em SGBD. **- 3 arquivos**
 
-## MySQL - Conceitos e Exemplos de Uso
+### Conceitos e Exemplos de Uso
 
 Os arquivos desta pasta exploram conceitos de banco de dados MySQL aplicados em sistemas práticos como bibliotecas, escolas, pet shops e sistemas criminais.
 
@@ -243,24 +279,68 @@ Situações comuns encontradas nos exercícios de MySQL:
 
 ---
 
-## P.O.O. - Programação Orientada a Objetos
+## Programação Orientada a Objetos (POO)
 
-**Conceitos Identificados e Resumo:**
+### Conceitos Identificados e Frequência
 
-**UML e Modelagem:**
-- **POO (Programação Orientada a Objetos)**: paradigma que organiza código em objetos com dados (atributos) e comportamentos (métodos), focando em reutilização, encapsulamento e modularidade. **- 1 arquivo**
-- **Classe vs Objeto**: classe é o modelo/template, objeto é instância concreta. Exemplo: classe "Carro" define estrutura, objeto é "Fusca Vermelho, 1975". **- 1 arquivo**
-- **UML (Unified Modeling Language)**: linguagem de modelagem visual para especificar, visualizar e documentar sistemas de software. Não é linguagem de programação executável. **- 1 arquivo**
-- **Objetivos da UML**: especificar estrutura/comportamento, visualizar arquitetura, documentar decisões de design, facilitar comunicação entre equipe e stakeholders. **- 1 arquivo**
-- **Requisitos funcionais vs não funcionais**: funcionais descrevem o que o sistema faz (ex: login), não funcionais descrevem como o sistema deve ser (ex: tempo de resposta < 2s). **- 1 arquivo**
-- **Ator em Diagrama de Casos de Uso**: entidade externa que interage com o sistema (pessoa, sistema externo ou hardware). Não precisa ser pessoa. **- 1 arquivo**
-- **Relacionamento - Associação**: relacionamento geral entre ator e caso de uso ou entre casos de uso. **- 1 arquivo**
-- **Relacionamento - Inclusão («include»)**: caso de uso base obrigatoriamente inclui outro caso de uso (comportamento obrigatório e reaproveitado). **- 1 arquivo**
-- **Relacionamento - Extensão («extend»)**: caso de uso estende outro de forma opcional sob condição (comportamento opcional condicional). **- 1 arquivo**
-- **Relacionamento - Herança (Generalização)**: caso de uso filho herda comportamento do caso de uso pai. **- 1 arquivo**
-- **Nome de caso de uso**: estrutura Verbo + Objeto (ação + entidade). Exemplos: Consultar Livro, Reservar Sala, Emitir Nota Fiscal. **- 1 arquivo**
+**Conceitos Básicos (presentes em 6 arquivos):**
+- **Classes e Objetos**: Definição de estruturas de dados e suas instâncias. **- 6 arquivos**
+- **Atributos**: Propriedades que armazenam o estado dos objetos. **- 6 arquivos**
+- **Métodos**: Funções que definem o comportamento dos objetos. **- 6 arquivos**
+- **Construtores**: Métodos especiais para inicialização de objetos. **- 6 arquivos**
+- **Tipagem TypeScript**: Uso de tipos para garantir segurança no código. **- 6 arquivos**
+- **Instanciação (new)**: Criação de objetos a partir de classes. **- 6 arquivos**
+- **this**: Referência ao próprio objeto dentro de métodos. **- 6 arquivos**
 
-**Situações comuns:** modelagem de sistemas (biblioteca, pizzaria, estacionamento, clínica, streaming), identificação de relacionamentos entre casos de uso, diferenciação entre requisitos funcionais e não funcionais, uso de atores externos (sistemas, hardware).
+**Conceitos Intermediários (presentes em 3-5 arquivos):**
+- **Herança (extends)**: Criação de subclasses que herdam características de classes pai. **- 3 arquivos**
+- **Encapsulamento (private, public)**: Uso de modificadores de acesso. **- 3 arquivos**
+- **Arrays em classes**: Armazenamento de múltiplos objetos como propriedades. **- 3 arquivos**
+- **Métodos com retorno**: Funções que retornam valores calculados. **- 4 arquivos**
+- **Condicionais em métodos**: Uso de if/else para lógica de negócios. **- 4 arquivos**
+- **Métodos void**: Funções que não retornam valor. **- 5 arquivos**
+- **Parâmetros em métodos**: Passagem de dados para métodos. **- 6 arquivos**
+
+**Conceitos Avançados (presentes em 1-2 arquivos):**
+- **Relacionamentos de UML**: Implementação de associação, agregação e composição. **- 1 arquivo**
+- **Multiplicidade**: Definição de cardinalidade entre classes (1..*, 1..1). **- 1 arquivo**
+- **Generalização**: Herança múltipla e especialização de classes. **- 1 arquivo**
+- **Loops em métodos**: Uso de for/while para processar coleções. **- 2 arquivos**
+- **Super()**: Chamada ao construtor da classe pai. **- 2 arquivos**
+- **Composição vs Agregação**: Diferenciação de relacionamentos todo-parte. **- 1 arquivo**
+
+### Conceitos e Exemplos de Uso
+
+Os arquivos da pasta P.O.O exploram conceitos de Programação Orientada a Objetos aplicados em TypeScript, desde classes básicas até implementações de diagramas UML.
+
+- **Classes e Objetos**: Definição de estruturas de dados e suas instâncias.
+- **Atributos**: Propriedades que armazenam o estado dos objetos.
+- **Métodos**: Funções que definem o comportamento dos objetos.
+- **Construtores**: Métodos especiais para inicialização de objetos.
+- **Tipagem TypeScript**: Uso de tipos para garantir segurança no código.
+- **Instanciação (new)**: Criação de objetos a partir de classes.
+- **this**: Referência ao próprio objeto dentro de métodos.
+- **Herança (extends)**: Criação de subclasses que herdam características de classes pai.
+- **Encapsulamento (private, public)**: Uso de modificadores de acesso.
+- **Arrays em classes**: Armazenamento de múltiplos objetos como propriedades.
+- **Métodos com retorno**: Funções que retornam valores calculados.
+- **Condicionais em métodos**: Uso de if/else para lógica de negócios.
+- **Métodos void**: Funções que não retornam valor.
+- **Parâmetros em métodos**: Passagem de dados para métodos.
+- **Relacionamentos de UML**: Implementação de associação, agregação e composição.
+- **Multiplicidade**: Definição de cardinalidade entre classes (1..*, 1..1).
+- **Generalização**: Herança múltipla e especialização de classes.
+- **Loops em métodos**: Uso de for/while para processar coleções.
+- **Super()**: Chamada ao construtor da classe pai.
+- **Composição vs Agregação**: Diferenciação de relacionamentos todo-parte.
+
+Situações comuns encontradas nos exercícios:
+- modelagem de sistemas reais (biblioteca, escola, loja virtual)
+- cadastro de entidades (pessoas, produtos, funcionários)
+- cálculos e conversões (IMC, temperatura, descontos)
+- controle de estoque e operações bancárias
+- implementação de relacionamentos entre classes
+- herança e especialização de objetos
 
 ---
 
@@ -270,12 +350,8 @@ Este projeto está licenciado sob a **Licença MIT**.
 
 ### Detalhes da Licença MIT
 
-**Permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para lidar com o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e para permitir pessoas a quem o Software é fornecido para fazê-lo, sujeito às seguintes condições:**
+**Permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para lidar com o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, fundir, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e permitir que as pessoas a quem o Software é fornecido o façam, sujeitas às seguintes condições:**
 
-- O aviso de copyright acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+O aviso de copyright acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
 
-**O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUMA CASO OS AUTORES OU TITULARES DE DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER REIVINDICAÇÃO, DANOS OU OUTRAS RESPONSIBILIDADES, SEJA EM UMA AÇÃO DE CONTRATO, ATO ILÍCITO OU DE OUTRA FORMA, DECORRENTE DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.**
-
-Para mais informações, consulte o arquivo [LICENSE](LICENSE) neste repositório.
-
----
+**O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUM CASO OS AUTORES OU TITULARES DE DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER REIVINDICAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM AÇÃO DE CONTRATO, TORT OU OUTRA, PROVENIENTE DE, OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.**
