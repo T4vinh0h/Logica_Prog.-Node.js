@@ -1,4 +1,11 @@
+// ========================================
+// Lista de Exercícios 01 – JavaScript
+// POO – Pilar da Abstração
+// ========================================
+
+// ========================================
 // Exercício 1 – Criando sua primeira Classe
+// ========================================
 class Pessoa {
     nome: string;
 
@@ -12,9 +19,12 @@ class Pessoa {
 }
 
 const pessoa1 = new Pessoa("João");
+console.log('=== Exercício 1 - Criando sua primeira Classe ===');
 pessoa1.apresentar();
 
+// ========================================
 // Exercício 2 – Trabalhando com dois objetos
+// ========================================
 class Aluno {
     nome: string;
     idade: number;
@@ -31,10 +41,13 @@ class Aluno {
 
 const aluno1 = new Aluno("Maria", 20);
 const aluno2 = new Aluno("Pedro", 22);
+console.log('\n=== Exercício 2 - Trabalhando com dois objetos ===');
 aluno1.mostrarDados();
 aluno2.mostrarDados();
 
+// ========================================
 // Exercício 3 – Utilizando Construtor
+// ========================================
 class Livro {
     titulo: string;
     autor: string;
@@ -50,9 +63,12 @@ class Livro {
 }
 
 const livro1 = new Livro("Dom Casmurro", "Machado de Assis");
+console.log('\n=== Exercício 3 - Utilizando Construtor ===');
 livro1.mostrarInformacoes();
 
+// ========================================
 // Exercício 4 – Calculando com Métodos
+// ========================================
 class Calculadora {
     somar(numero1: number, numero2: number): number {
         return numero1 + numero2;
@@ -61,9 +77,12 @@ class Calculadora {
 
 const calc = new Calculadora();
 const resultado = calc.somar(5, 3);
+console.log('\n=== Exercício 4 - Calculando com Métodos ===');
 console.log(`Resultado da soma: ${resultado}`);
 
+// ========================================
 // Exercício 5 – Utilizando Condição
+// ========================================
 class Produto {
     nome: string;
     quantidade: number;
@@ -84,10 +103,13 @@ class Produto {
 
 const produto1 = new Produto("Notebook", 5);
 const produto2 = new Produto("Celular", 0);
+console.log('\n=== Exercício 5 - Utilizando Condição ===');
 produto1.verificarEstoque();
 produto2.verificarEstoque();
 
+// ========================================
 // Exercício 6 – Utilizando Laço de Repetição
+// ========================================
 class Contador {
     contar(): void {
         for (let i = 1; i <= 10; i++) {
@@ -97,9 +119,12 @@ class Contador {
 }
 
 const contador = new Contador();
+console.log('\n=== Exercício 6 - Utilizando Laço de Repetição ===');
 contador.contar();
 
+// ========================================
 // Exercício 7 – Média do Aluno
+// ========================================
 class Boletim {
     nome: string;
     nota1: number;
@@ -123,10 +148,13 @@ class Boletim {
 
 const boletim1 = new Boletim("Ana", 8, 7);
 const boletim2 = new Boletim("Carlos", 5, 6);
+console.log('\n=== Exercício 7 - Média do Aluno ===');
 boletim1.calcularMedia();
 boletim2.calcularMedia();
 
+// ========================================
 // Exercício 8 – Tabuada
+// ========================================
 class Tabuada {
     numero: number;
 
@@ -143,9 +171,12 @@ class Tabuada {
 }
 
 const tabuada = new Tabuada(7);
+console.log('\n=== Exercício 8 - Tabuada ===');
 tabuada.mostrarTabuada();
 
+// ========================================
 // Exercício 9 – Cadastro de Carros
+// ========================================
 class Carro {
     marca: string;
     modelo: string;
@@ -165,11 +196,14 @@ class Carro {
 const carro1 = new Carro("Toyota", "Corolla", 2020);
 const carro2 = new Carro("Honda", "Civic", 2021);
 const carro3 = new Carro("Chevrolet", "Onix", 2022);
+console.log('\n=== Exercício 9 - Cadastro de Carros ===');
 carro1.mostrarInformacoes();
 carro2.mostrarInformacoes();
 carro3.mostrarInformacoes();
 
+// ========================================
 // Exercício 10 – Sistema de Conta Bancária
+// ========================================
 class ContaBancaria {
     titular: string;
     saldo: number;
@@ -195,6 +229,7 @@ class ContaBancaria {
 }
 
 const conta1 = new ContaBancaria("João Silva", 1000);
+console.log('\n=== Exercício 10 - Sistema de Conta Bancária ===');
 conta1.depositar(500);
 conta1.sacar(200);
 conta1.sacar(2000);
